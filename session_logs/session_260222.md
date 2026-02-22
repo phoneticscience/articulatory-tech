@@ -51,9 +51,9 @@ astro.config.mjs
 - [x] Remove emojis, rewrite copy, improve responsive design
 - [x] Add News section (Speech Prosody 2026)
 - [x] Initialize git repo and push to GitHub
-- [ ] Configure GitHub Pages: enable Pages, set source to GitHub Actions
-- [ ] Configure custom domain `articulatory.tech` in GitHub Pages settings
-- [ ] Verify CloudFlare DNS CNAME -> GitHub Pages
+- [x] Configure GitHub Pages: enable Pages, set source to GitHub Actions
+- [x] Configure custom domain `articulatory.tech` in GitHub Pages settings
+- [x] Verify CloudFlare DNS CNAME -> GitHub Pages
 - [ ] Fill in Speech Prosody 2026 details (date, location, title)
 - [ ] Create favicon (cropped/simplified logo at 32x32)
 - [ ] Add Blog section
