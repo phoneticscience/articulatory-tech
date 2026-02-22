@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+---
+
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3 no-underline">
+      <img src="/images/logo.png" alt="Articulatory.Tech logo" class="h-8 w-auto" />
+      <span class="text-navy font-semibold text-lg">Articulatory.Tech</span>
+    </a>
+
+    <!-- Desktop/Tablet nav -->
+    <ul class="hidden sm:flex items-center gap-8 list-none m-0 p-0">
+      <li><a href="#news" class="text-gray-600 hover:text-navy no-underline text-sm font-medium transition-colors">News</a></li>
+      <li><a href="#mission" class="text-gray-600 hover:text-navy no-underline text-sm font-medium transition-colors">Solutions</a></li>
+      <li><a href="#about" class="text-gray-600 hover:text-navy no-underline text-sm font-medium transition-colors">About</a></li>
+    </ul>
+
+    <!-- Mobile hamburger -->
+    <button
+      id="mobile-menu-btn"
+      class="sm:hidden flex flex-col gap-1.5 bg-transparent border-none cursor-pointer p-1"
+      aria-label="Toggle menu"
+    >
+      <span class="block w-6 h-0.5 bg-navy transition-transform" id="bar1"></span>
+      <span class="block w-6 h-0.5 bg-navy transition-opacity" id="bar2"></span>
+      <span class="block w-6 h-0.5 bg-navy transition-transform" id="bar3"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden sm:hidden border-t border-gray-100">
+    <ul class="list-none m-0 p-0 px-6 py-4 flex flex-col gap-4">
+      <li><a href="#news" class="text-gray-600 hover:text-navy no-underline text-sm font-medium">News</a></li>
+      <li><a href="#mission" class="text-gray-600 hover:text-navy no-underline text-sm font-medium">Solutions</a></li>
+      <li><a href="#about" class="text-gray-600 hover:text-navy no-underline text-sm font-medium">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>
